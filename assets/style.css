@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    background-image:url("https://i.imgur.com/Awj83sf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+} 
+
+header h1 {
+color: rgb(92, 71, 47);
+font-weight: bold;
+font-size: 150px;
+font-family:Arial, Helvetica, sans-serif;
+margin: 0;
+}
+
+header a {
+    color: rgb(92, 71, 47);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+header nav {
+    margin: 7px 0;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    align-items: center;
+    list-style: none;
+  }
+
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(165, 140, 99, 0.5);
+  }
+
+  .info h2 {
+      color:rgb(77, 52, 24);
+      font-size: 80px;
+      flex-wrap: wrap;
+      text-align: center;
+      right: 100px;
+      margin: 50px auto;
+      align-items: center;
+  }
+
+  .flex-row {
+      color: rgb(105, 84, 49);
+      font-size: 40px;
+      text-align: center;
+
+  }
+
+  .my-work h2 {
+      color: rgb(77, 52, 24);
+      font-size: 80px;
+      flex-wrap: wrap;
+      text-align: center;
+      margin: 50px auto;
+      align-items: center;
+
+  }
+
+  .space1 {
+      margin-top: 500px;
+  }
