@@ -5,7 +5,7 @@
 }
 
 body {
-    color: black;
+    color: rgb(53, 40, 28);
     background-image:url("https://i.imgur.com/Awj83sf.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,26 +16,35 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
     position: sticky;
+    top: 0;
+    z-index: 9999;
+    position: fixed; 
+    right: -10px;
+    
+    
 } 
 
 header h1 {
 color: rgb(92, 71, 47);
-font-weight: bold;
-font-size: 150px;
-font-family:Arial, Helvetica, sans-serif;
-margin: 0;
+font-size:  Arial, Helvetica, sans-serif;
+position: relative;
+
+right: 1200px;
+
+
 }
 
 header a {
     color: rgb(92, 71, 47);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
+   
 }
 
 header nav {
     margin: 7px 0;
+    flex-wrap: wrap;
   }
 
   header nav ul {
@@ -51,16 +60,50 @@ header nav {
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(165, 140, 99, 0.5);
+    
   }
 
-  .info h2 {
-      color:rgb(77, 52, 24);
-      font-size: 80px;
-      flex-wrap: wrap;
-      text-align: center;
-      right: 100px;
-      margin: 50px auto;
-      align-items: center;
+ .hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.hero-cta {
+   
+    text-align: center;
+   color: rgb(77, 52, 24);
+    font-size: 18px;
+    line-height: 1.2;
+  }  
+
+
+  .hero-cta h2{
+      color: rgb(77, 52, 24);
+      font-weight: bold;
+      font-size: 60px;
+     position: absolute;
+     top: 280px;
+     right: 500px;
+     
+  }
+
+  .hero-cta p {
+    margin:0px;
+     padding: 1px;
+    color: rgb(77, 52, 24);
+    font-size: 20px;
+    bottom: 500px;
+    position: absolute;
+    right: 230px;
+
+  }
+
+  .hero img {
+    margin: 0px;
+    right: 550px;
+    bottom: -232px;
   }
 
   .flex-row {
@@ -69,6 +112,10 @@ header nav {
       text-align: center;
 
   }
+
+  .space1 {
+    margin-top: 300px;
+}
 
   .my-work h2 {
       color: rgb(77, 52, 24);
@@ -80,6 +127,113 @@ header nav {
 
   }
 
-  .space1 {
-      margin-top: 500px;
+  
+
+.img1 {
+    position:relative;
+    right: -200px;
+}
+
+  .img1 h3 {
+      color:rgba(165, 140, 99, 0.5) ;
   }
+
+  .img2 {
+      position: relative;
+      top: -354px;
+      right: -1000px;
+  }
+
+  .img2 h3 {
+    color:rgba(165, 140, 99, 0.5) ;  
+  }
+
+.space2 {
+    margin-top: -10px;
+}
+
+.contact
+
+  .contact-info h2 {
+    color: rgb(77, 52, 24);
+    font-size: 80px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 50px auto;
+    align-items: center;
+  }
+
+  .contact-info h3 {
+    color: rgb(65, 47, 26);
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .contact-info a {
+      display:inline-block;
+  }
+
+  .hero img {
+     position: relative;
+     right: 700px;
+  }
+
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding: 20px 32px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    position: fixed; 
+    right: -12px;
+  }
+
+  
+  .my-work h2 {
+    color: rgb(77, 52, 24);
+    font-size: 80px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 50px auto;
+    align-items: center;
+}
+  
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  .hero-cta {
+   
+    text-align: center;
+   color: rgb(77, 52, 24);
+    font-size: 18px;
+    line-height: 1.2;
+  }  
+  .hero-cta p {
+    margin:1px;
+     padding: 1px;
+    color: rgb(77, 52, 24);
+    font-size: 20px;
+    bottom: 500px;
+    position: absolute;
+    right: 230px;
+
+  }
+
+  .hero img {
+    margin: 0px;
+    right: 550px;
+    bottom: -232px;
+  }
+
+  .flex-row {
+      color: rgb(105, 84, 49);
+      font-size: 40px;
+      text-align: center;
+
+  }
+    
+  
+
+}
+}
