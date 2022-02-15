@@ -9,7 +9,6 @@ A website that offers samples of my work.
 
 ## Website
 https://jpozdnyakov.github.io/my-portfolio/
-/
 
 
  
